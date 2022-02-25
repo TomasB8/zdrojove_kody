@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Domov" />
+
+    <item
+        android:id="@+id/nav_pridat_aktivitu"
+        android:icon="@drawable/ic_baseline_directions_run_24"
+        android:title="Pridať aktivitu" />
+
+    <item
+        android:id="@+id/nav_pridat_zaznam"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="Pridať záznam" />
+
+    <item
+        android:id="@+id/nav_kalendar"
+        android:icon="@drawable/ic_baseline_date_range_24"
+        android:title="Kalendár" />
+</menu>
