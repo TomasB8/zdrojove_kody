@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 810px;
+    font-family: Arial;
+    background-color: #005B73;
+    align-items: center;
+}
+
+#header {
+    min-width: 575px;
+    height: 150px;
+    background-color: #00303D;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+}
+
+#header h1 {
+    position: relative;
+    top: 45px;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#footer {
+    position: relative;
+    min-height:250px;
+    padding: 10px 200px 20px 200px;
+    background:#00303D;
+    border-top: 5px solid #00546A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.odsadenie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+    min-height: calc(100vh - 200px - 486px);
+    width: 100%;
+}
+
+.text {
+    min-height: 585px;
+    min-width: 575px;
+    width: min-content;
+    border: 5px solid #00546A;
+    border-radius: 15px;
+    margin: 50px auto 50px auto;
+    padding: 40px 100px 20px 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+div .text h1{
+    color: #6BC400;
+    margin-bottom: 10px;
+}
+
+
+/**********MENU*********/
+.sidebar{
+    width: 100%;
+    min-width: 575px;
+}
+    
+.sidebar UL{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+    
+.sidebar UL LI{
+    position: relative;
+    float: left;
+    width: 20%;
+    text-align: center;
+    background-color: white;
+}
+    
+.sidebar UL LI A{
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 2px solid #ABABAB;
+    color: #00303D;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    
+.sidebar UL LI A.active{
+    color: #f5f7f4;
+    background-color: #6BC400;
+}
+    
+.sidebar UL LI:HOVER A{
+    background-color: rgb(114, 114, 114);
+    color: #03DAC5;
+}
+    
+.sidebar UL LI .border-right{
+    border-right: 1px solid #CBCBCB;
+}
+
+.line{
+    border-top: 2px dotted black;
+}
+
+div .text .blok{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.text .paragraf{
+    margin-bottom: 50px;
+}
+
+div .text h2{
+    color: #6BC400;
+    margin-bottom: 10px;
+}
+
+.uvod{
+    border: 3px solid #005B73;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+    padding-top: 0;
+    background-color: #E2F7FF;
+    display: none;
+}
+
+.uvod h3{
+    color: #005B73;
+    font-size: 20px;
+}
+
+/*********FORMULAR**********/
+.formular{
+    padding: 20px;
+    height: 80%;
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid #ebebeb;
+    background-color: white;
+    font-family: Arial;
+    font-size: 17px;
+    color: #455560;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.formular p {
+    text-align: left;
+    text-transform: none;
+    margin-top: 20px;
+}
+    
+.zadavanie{
+    width: 450px;
+    display: inline-block;
+}
+    
+.formular .vacsi{
+    width: 90%;
+}
+
+.formular INPUT, .formular LABEL{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 5px;
+}
+    
+.zadavanie INPUT, .zadavanie LABEL{
+    display: inline-block;
+    width: 85%;
+    text-align: left;
+}
+    
+.formular LABEL{
+    text-align: left;
+}
+    
+.formular INPUT{
+    height: 40px;
+    border: 1px solid #bababa;
+    margin-bottom: 15px;
+}
+    
+.formular INPUT[type="button"], .odhlasenie, .contact_form INPUT[type="button"]{
+    display: inline;
+    width: 200px;
+    height: 40px;
+    background-color: #6BC400;
+    border: 1px solid #6fae3c;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 15px;
+    outline: none;
+}
+    
+.formular INPUT[type="button"]:HOVER, .odhlasenie:HOVER, .contact_form INPUT[type="button"]:HOVER{
+    cursor: pointer;
+    background-color: #00C132;
+    border-radius: 15px;
+}
+
+#minuty, #sekundy{
+    display: inline-block;
+    width: 198px;
+}
+#minuty{
+    text-align: right;
+}
+
+.success, .error{
+    border: 2px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 10px;
+    /*width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    */
+    }
+    
+.success {
+    color: #FFFFFF;
+    background-color: #6BC400;
+    border-color: #00711D;
+}
+    
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+#spravaUprava{
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/******ZAZNAMY******/
+.zaznamy{
+    width: 120%;
+    font-family: Arial;
+    }
+    
+    .zaznamy, .zaznamy TH, .zaznamy TD{
+    border: 1px solid #D9E4E6;
+    }
+    
+    .zaznamy TH, .zaznamy TD{
+    padding: 10px;
+    }
+    
+    .zaznamy TH{
+    background-color: #167F92;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-transform: uppercase;
+    }
+    
+    .akcie{
+        width: 110px;
+    }
+    .zaznamy TR:nth-child(odd){
+    background-color: #B4D1E5;
+    }
+    
+    .zaznamy TR{
+    color: #024457;
+    background-color: #FFFFFF;
+    }
+    
+    .zaznamy TD{
+    font-size: 14px;
+    text-align: center;
+    }
+    
+    .zaznamy TR:HOVER{
+    color: #f5f7f4;
+    background-color: #6BC400;
+    }
+    
+    .zaznamy TH A.sortable{
+        color: #FFFFFF;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .zaznamy TH A.sortable:HOVER{
+        color: #D9E4E6;
+    }
+    
+    .zaznamy TH A.sortable.asc:before{
+        content: '⇡ ';
+    }
+    
+    .zaznamy TH A.sortable.desc:before{
+        content:  '⇣ ';
+    }
+
+/******LOADER*******/
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .user{
+    border: 3px solid black;
+    border-radius: 100px;
+}
+
+.odhlasenie {
+    margin-top: 50px;
+}
+
+#map {
+    margin: 0;
+    padding: 0;
+    height: 800px;
+    width: 800px;
+    border-radius: 15px;
+}
+
+#obrMiesto{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#obrUpravit{
+    height: 0;
+    display: inline;
+}
+
+#galeria{
+    display: inline;
+    float: right;
+    position: relative;
+    top: 80px;
+}
+
+.obrazky{
+    position: relative;
+    left: 18px;
+}
+
+#dateUprava{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 22px;
+    font-size: 18px;
+}
+
+#bezZaznamu, #sprava, #sprava1, #sprava2, #sprava3, #sprava4, #sprava5, #sprava6, #sprava7 {
+    width: 100%;
+    margin: 0 15px 10px 15px;
+}
+
+.paginator {
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+.paginator h4{
+    display: inline;
+}
+
+.paginator a{
+    margin: 0px 100px;
+    color: #009EFF;
+    font-weight: bold;
+}
+
+.paginator a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/******KONTAKTNÝ FORMULÁR*******/
+.contact_form{
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 700px;
+}
+    
+.contact_form INPUT, .contact_form TEXTAREA, .contact_form LABEL{
+    display: block;
+    width: 100%;
+}
+    
+.contact_form LABEL{
+    margin-bottom: 5px;
+    text-align: left;
+}
+    
+.contact_form INPUT, .contact_form TEXTAREA{
+    height: 30px;
+    border: 1px solid #bababa;
+    padding-left: 5px;
+}
+    
+.contact_form TEXTAREA{
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.contact_form INPUT[type="submit"]{
+    display: inline;
+    width: 200px;
+    height: 40px;
+    background-color: #6BC400;
+    border: 1px solid #6fae3c;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 15px;
+    outline: none;
+}
+        
+.contact_form INPUT[type="submit"]:HOVER{
+    cursor: pointer;
+    background-color: #00C132;
+    border-radius: 15px;
+}
+
+#contact {
+    margin-top: 100px;
+}
+
+.blok ul{
+    margin-left: 40px;
+}
+
+.blok ul li {
+    margin-bottom: 10px;
+}
+
+.prianie{
+    color: red;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.kontakt {
+    min-width: 750px;
+}
+
+@media only screen and (min-height: 1000px) {
+    BODY {
+        max-height: 100vh;
+    }
+  }
+
+@media only screen and (max-width: 1000px) {
+    .kontakt {
+        width: calc(100vw - 250px);
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .kontakt {
+        width: 1200px;
+    }
+}
